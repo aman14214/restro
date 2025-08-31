@@ -1,0 +1,74 @@
+.food-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  max-width: 100%;           /* prevent overflow */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+}
+
+.food-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.food-card h2 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.food-card .offer {
+  display: inline-block;
+  margin-top: 10px;
+  background: #ff6b00;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* 🔽 Responsive Styles */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .food-card {
+    width: 200px;          /* shrink a little */
+    padding: 15px;
+  }
+
+  .food-card h2 {
+    font-size: 18px;
+  }
+
+  .food-card .offer {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .food-card {
+    width: 90%;            /* full width on small screens */
+    max-width: 320px;      /* don’t let it stretch too much */
+    margin: 0 auto;        /* center it */
+    padding: 12px;
+  }
+
+  .food-card h2 {
+    font-size: 16px;
+  }
+
+  .food-card .offer {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+}
