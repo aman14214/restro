@@ -1,38 +1,39 @@
 .food-card {
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 250px;
-  max-width: 100%;           /* prevent overflow */
-  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+  width: 300px;              /* 🔹 increased from 250px */
+  max-width: 100%;
+  padding: 24px;             /* 🔹 more padding */
   text-align: center;
   transition: transform 0.2s;
 }
 
 .food-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .food-card img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  border-radius: 12px;
+  margin-bottom: 18px;
 }
 
 .food-card h2 {
-  margin: 10px 0;
-  font-size: 20px;
+  margin: 12px 0;
+  font-size: 22px;           /* 🔹 bigger heading */
 }
 
 .food-card .offer {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px;
   background: #ff6b00;
   color: white;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 15px;           /* 🔹 slightly bigger */
+  font-weight: bold;
 }
 
 /* 🔽 Responsive Styles */
@@ -40,8 +41,27 @@
 /* Tablet */
 @media (max-width: 992px) {
   .food-card {
-    width: 200px;          /* shrink a little */
-    padding: 15px;
+    width: 240px;           /* 🔹 slightly larger than before */
+    padding: 18px;
+  }
+
+  .food-card h2 {
+    font-size: 20px;
+  }
+
+  .food-card .offer {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .food-card {
+    width: 90%;            
+    max-width: 340px;       /* 🔹 allow a bit more size */
+    margin: 0 auto;
+    padding: 14px;
   }
 
   .food-card h2 {
@@ -50,25 +70,6 @@
 
   .food-card .offer {
     font-size: 13px;
-    padding: 4px 8px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 576px) {
-  .food-card {
-    width: 90%;            /* full width on small screens */
-    max-width: 320px;      /* don’t let it stretch too much */
-    margin: 0 auto;        /* center it */
-    padding: 12px;
-  }
-
-  .food-card h2 {
-    font-size: 16px;
-  }
-
-  .food-card .offer {
-    font-size: 12px;
-    padding: 4px 6px;
+    padding: 5px 8px;
   }
 }
