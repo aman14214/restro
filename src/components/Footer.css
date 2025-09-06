@@ -65,6 +65,25 @@
   color: #ff6b00;
 }
 
+/* 🔽 Map Section */
+.map-col {
+  color: #fff;
+}
+
+.map-col p {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #bbb;
+}
+
+.map-container {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
 /* 🔽 Responsive Styles */
 
 /* Tablet */
@@ -104,5 +123,10 @@
 
   .social-icons {
     justify-content: center; /* center icons */
+  }
+
+  .map-container {
+    height: 200px; /* bigger map on mobile */
+    margin: 0 auto;
   }
 }

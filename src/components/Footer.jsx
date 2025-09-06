@@ -14,22 +14,6 @@ const Footer = () => {
           <p>© 2025 Restro Limited</p>
         </div>
 
-        {/* Company Section */}
-        <div className="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li>About Us</li>
-            <li>Corporate</li>
-            <li>Careers</li>
-            <li>Team</li>
-            <li>Restro One</li>
-            <li>Instamart</li>
-            <li>Dineout</li>
-            <li>Minis</li>
-            <li>Pyng</li>
-          </ul>
-        </div>
-
         {/* Contact Section */}
         <div className="footer-col">
           <h4>Contact us</h4>
@@ -79,6 +63,24 @@ const Footer = () => {
             <FaFacebook />
             <FaPinterest />
             <FaTwitter />
+          </div>
+        </div>
+
+        {/* Google Map + Address */}
+        <div className="footer-col map-col">
+          <h4>Address</h4>
+          <p>96 East Central Park Road,<br />New York, USA</p>
+          <div className="map-container">
+            <iframe
+              title="Google Map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.982680248776!2d-73.97124868459354!3d40.78306097932462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589d1a55d0f1%3A0x21f0f0c7d0a8b2b4!2sCentral%20Park!5e0!3m2!1sen!2sus!4v1660000000000!5m2!1sen!2sus"
+              width="100%"
+              height="150"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
